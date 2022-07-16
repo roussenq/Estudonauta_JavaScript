@@ -1,2 +1,3 @@
 # Estudonauta_JavaScript
- Repositório do curso JavaScript do portal Estudonauta
+
+ Repositório do curso Linguagem JavaScript do portal Estudonauta!
