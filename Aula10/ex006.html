@@ -18,28 +18,27 @@
   </head>
   <body>
     <h1>Eventos DOM</h1>
-    <div id="area" onclick="cliqueBotao()" onmouseenter="mouseEntrar()"
-    onmouseout="mouseSair()">
-      Interaja
-    </div>
+    <div id="area">Interaja</div>
     <script>
       var botao = window.document.querySelector("div#area");
 
-      
-      function mouseSair(){
-            botao.style.background = 'green'
-            botao.style.color = 'white'
-        }
+      botao.addEventListener('click', cliqueBotao);
+      botao.addEventListener('mouseenter', mouseEntrar);
+      botao.addEventListener('mouseout', mouseSair);
 
+      function mouseSair() {
+        botao.style.background = "green";
+        botao.style.color = "white";
+      }
 
-        function mouseEntrar(){
-            botao.style.background = 'yellow'
-            botao.style.color = 'red'
-        }
+      function mouseEntrar() {
+        botao.style.background = "yellow";
+        botao.style.color = "red";
+      }
 
       function cliqueBotao() {
-        botao.innerHTML = "Clicou!"
-        botao.style.background = 'blue'
+        botao.innerHTML = "Clicou!";
+        botao.style.background = "blue";
       }
     </script>
   </body>
