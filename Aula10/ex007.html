@@ -22,11 +22,24 @@
   </head>
   <body>
     <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1" />
+    <input type="number" name="txtn1" id="txtn1" /> +
     <input type="number" name="txtn2" id="txtn2" />
-    <input type="button" value="somar" onclick="somar()" />
+    <input type="button" id="bSomar" value="somar" onclick="somar()" />
     <div id="resultado">Resultado:</div>
     <script>
+      var a = window.document.getElementById("bSomar");
+      a.addEventListener("click", clicar);
+      a.addEventListener("mouseenter", entrar);
+      a.addEventListener("mouseout", sair);
+
+      function entrar() {
+        a.style.background = "green"
+      }
+
+      function clicar() {
+        a.style.background = "red";
+        a.style.color = "white";
+      }
       function somar() {
         var tn1 = window.document.getElementById("txtn1");
         var tn2 = window.document.getElementById("txtn2");
