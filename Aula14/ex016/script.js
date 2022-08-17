@@ -7,10 +7,14 @@ function contar() {
         alert('[ERRO], faltam dados!!!')
         resposta.innerHTML = "Preencha os campos!"
     } else {
-        resposta.innerHTML = "Contando..."
+        resposta.innerHTML = "Contando: <br>"
         let i = Number(inicio.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
+        if (p <= 0) {
+            window.alert('Passo inválido!, passo será = 1')
+            p = 1
+        }
         if (i < f) {
             for (let c = i; c <= f; c += p) {
                 resposta.innerHTML += `${c} \u{1F449} `
