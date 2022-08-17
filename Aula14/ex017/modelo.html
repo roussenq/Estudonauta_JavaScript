@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aula 15 - Exercício 17</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Aula 15 - Exercício 17</h1>
-    </header>
-    <section>
-      <div>Testando</div>
-      <div>Testando denovo</div>
-    </section>
-    <footer>
-      <p>&copy; Estudonauta</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aula 15 - Exercício 17</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Tabuada</h1>
+  </header>
+  <section>
+    <div id="dados">
+      <p>
+        Número: <input type="number" name="numero" id="txtn">
+        <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+      </p>
+    </div>
+    <div>
+      <select name="tabuada" id="seltab" size="10">
+       <option>Digite um n°</option>
+      </select>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; Estudonauta</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
