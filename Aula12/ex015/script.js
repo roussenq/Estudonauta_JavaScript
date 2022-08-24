@@ -13,31 +13,30 @@ function verificar() {
     var imagem = document.createElement("img");
     imagem.setAttribute("id", "foto"); //é como se fosse no HTML e <img id='foto'>
     if (sexo[0].checked) {
-      genero = "Homem";
+      genero = "Masculino";
       if (idade > 60) {
-        //idoso imagem.setAttribute('src','/Aula12/imagens/idoso_homem.png')
-        imagem.setAttribute("src", "/Aula12/ex015/imagens/teste.png");
+        imagem.setAttribute("src", "/Aula12/ex015/imagens/idoso_h_250.png");
       } else if (idade > 21) {
-        //adulto
+        imagem.setAttribute("src", "/Aula12/ex015/imagens/adulto_h_250.png");
       } else if (idade > 12) {
-        //jovem
+        imagem.setAttribute("src", "/Aula12/ex015/imagens/jovem_h_250.png");
       } else if (idade > 3) {
-        //criança
+        imagem.setAttribute("src", "/Aula12/ex015/imagens/crianca_h_250.png");
       } else {
-        //bebe
+        imagem.setAttribute("src", "/Aula12/ex015/imagens/bebe_h_250.png");
       }
     } else if (sexo[1].checked) {
-      genero = "Mulher";
+      genero = "Feminino";
       if (idade > 60) {
-        //idoso
+        imagem.setAttribute("src", "/Aula12/ex015/imagens/idoso_f_250.png");
       } else if (idade > 21) {
-        //adulto
+        imagem.setAttribute("src", "/Aula12/ex015/imagens/adulto_f_250.png");
       } else if (idade > 12) {
-        //jovem
+        imagem.setAttribute("src", "/Aula12/ex015/imagens/jovem_f_250.png");
       } else if (idade > 3) {
-        //criança
+        imagem.setAttribute("src", "/Aula12/ex015/imagens/crianca_f_250.png");
       } else {
-        //bebe
+        imagem.setAttribute("src", "/Aula12/ex015/imagens/bebe_f_250.png");
       }
     }
     res.style.textAlign = "center";
