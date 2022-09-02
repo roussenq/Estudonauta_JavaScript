@@ -15,28 +15,28 @@ function verificar() {
     if (sexo[0].checked) {
       genero = "Masculino";
       if (idade > 60) {
-        imagem.setAttribute("src", "/Aula12/ex015/imagens/idoso_h_250.png");
+        imagem.setAttribute("src", "/Aula12_exercicios/ex015/imagens/idoso_h_250.png");
       } else if (idade > 21) {
-        imagem.setAttribute("src", "/Aula12/ex015/imagens/adulto_h_250.png");
+        imagem.setAttribute("src", "/Aula12_exercicios/ex015/imagens/adulto_h_250.png");
       } else if (idade > 12) {
-        imagem.setAttribute("src", "/Aula12/ex015/imagens/jovem_h_250.png");
+        imagem.setAttribute("src", "/Aula12_exercicios/ex015/imagens/jovem_h_250.png");
       } else if (idade > 3) {
-        imagem.setAttribute("src", "/Aula12/ex015/imagens/crianca_h_250.png");
+        imagem.setAttribute("src", "/Aula12_exercicios/ex015/imagens/crianca_h_250.png");
       } else {
-        imagem.setAttribute("src", "/Aula12/ex015/imagens/bebe_h_250.png");
+        imagem.setAttribute("src", "/Aula12_exercicios/ex015/imagens/bebe_h_250.png");
       }
     } else if (sexo[1].checked) {
       genero = "Feminino";
       if (idade > 60) {
-        imagem.setAttribute("src", "/Aula12/ex015/imagens/idoso_f_250.png");
+        imagem.setAttribute("src", "/Aula12_exercicios/ex015/imagens/idoso_f_250.png");
       } else if (idade > 21) {
-        imagem.setAttribute("src", "/Aula12/ex015/imagens/adulto_f_250.png");
+        imagem.setAttribute("src", "/Aula12_exercicios/ex015/imagens/adulto_f_250.png");
       } else if (idade > 12) {
-        imagem.setAttribute("src", "/Aula12/ex015/imagens/jovem_f_250.png");
+        imagem.setAttribute("src", "/Aula12_exercicios/ex015/imagens/jovem_f_250.png");
       } else if (idade > 3) {
-        imagem.setAttribute("src", "/Aula12/ex015/imagens/crianca_f_250.png");
+        imagem.setAttribute("src", "/Aula12_exercicios/ex015/imagens/crianca_f_250.png");
       } else {
-        imagem.setAttribute("src", "/Aula12/ex015/imagens/bebe_f_250.png");
+        imagem.setAttribute("src", "/Aula12_exercicios/ex015/imagens/bebe_f_250.png");
       }
     }
     res.style.textAlign = "center";
