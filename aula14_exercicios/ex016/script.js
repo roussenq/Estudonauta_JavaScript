@@ -1,43 +1,31 @@
 function contar() {
-    let inicio = window.document.getElementById('txti')
-    let fim = window.document.getElementById('txtf')
-    let passo = window.document.getElementById('txtp')
-
-    if (inicio.value.length == 0) {
-        window.alert('[ERRO]Faltam dados! ')
-    }
-
-
-}
-
-/**
-    let fnumi = document.getElementById("numI");
-  let fnumf = document.getElementById("numF");
-  let fpasso = document.getElementById("numP");
-  let fres = document.getElementById("res");
-
-  let i = Number(fnumi.value);
-  let f = Number(fnumf.value);
-  let c = Number(fpasso.value);
-  let x;
-  fres.innerHTML = `<strong>${i}<\strong> / `;
-
-  if (fnumi.value.lenght == 0) {
-    window.alert("[ERRO] Faltam dados!");
+  let inicio = window.document.getElementById('txti')
+  let fim = window.document.getElementById('txtf')
+  let passo = window.document.getElementById('txtp')
+  let res = window.document.getElementById('resultado')
+  if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+    window.alert('[ERRO]Faltam dados! ')
+    res.innerHTML = 'Impossível contar!'
   } else {
-    for (i; i < f; c) {
-      x = i + c;
-      if (x <= f) {
-        fres.innerHTML += `<strong>${x}<\strong>`;
-      }
-      i += c;
+    res.innerHTML = `Contando...<br>`
+    let i = Number(inicio.value)
+    let f = Number(fim.value)
+    let p = Number(passo.value)
+    if (p <= 0) {
+      alert('Passo inválido, considerando PASSO = 1')
+      p = 1
     }
-  }
+    if (i < f) {
+      for (let c = i; c <= f; c += p) {
+        res.innerHTML += `${c} \u{1F449} `
+      }
+      res.innerHTML += `\u{1F3C1}`
+    } else {
+      for (let c = i; c >= f; c -= p) {
+        res.innerHTML += `${c} \u{1F449} `
+      }
+      res.innerHTML += `\u{1F3C1}`
+    }
 
-  fres.innerHTML = `Numero inicial: ${Number(fnumi.value)}
-   
-                     </br>n° final: ${Number(fnumf.value)}
-   
-                   </br>passo: ${Number(fpasso.value)}`;
+  }
 }
- */
