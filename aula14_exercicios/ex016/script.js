@@ -3,6 +3,7 @@ function contar() {
   let fim = window.document.getElementById('txtf')
   let passo = window.document.getElementById('txtp')
   let res = window.document.getElementById('resultado')
+
   if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
     window.alert('[ERRO]Faltam dados! ')
     res.innerHTML = 'Impossível contar!'
